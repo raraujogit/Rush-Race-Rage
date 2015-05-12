@@ -61,6 +61,8 @@ namespace GameName3
                 Exit();
             scene.Update(gameTime);
             base.Update(gameTime);
+
+           
         }
 
         protected override void Draw(GameTime gameTime)

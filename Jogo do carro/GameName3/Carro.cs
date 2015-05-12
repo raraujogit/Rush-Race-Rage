@@ -16,7 +16,7 @@ namespace GameName3
             : base(content, "Carro mustang")
         {
             this.Scale(.15f);
-            this.position.Y = position.Y + 0.01f;
+            this.position.Y = position.Y + 0.1f;
         }
 
         public override void Draw(GameTime gameTime)
@@ -44,8 +44,8 @@ namespace GameName3
            // turret.SetRotation(rot);
 
             fireCounter += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (fireCounter >= fireInterval &&
-                mstate.LeftButton == ButtonState.Pressed)
+            //if (fireCounter >= fireInterval &&
+              //  mstate.LeftButton == ButtonState.Pressed)
             //{
             //    Vector2 pos = this.position
             //             + new Vector2((float)Math.Sin(rot) * size.Y / 2,
@@ -55,30 +55,69 @@ namespace GameName3
             //    fireCounter = 0f;
             //}
 
+                
+                KeyboardState state = Keyboard.GetState();
+                if (state.IsKeyDown(Keys.W))
+                {
+                    this.position.Y += 0.01f;
+                    Sprite other;
+                    Vector2 colPosition;
+                    if (scene.Collides(this, out other, out colPosition))
+                        this.position.Y -= 0.01f;
+                }
 
-                //KeyboardState state = Keyboard.GetState();
-                //if (state.IsKeyDown(Keys.W))
-                //{
-                //    this.position.Y += 0.01f;
-                //    Sprite other;
-                //    Vector2 colPosition;
-                //    if (scene.Collides(this, out other, out colPosition))
-                //        this.position.Y -= 0.01f;
-                //}
-                //if (state.IsKeyDown(Keys.S))
-                //{
-                //    this.position.Y -= 0.01f;
-                //    Sprite other;
-                //    Vector2 colPosition;
-                //    if (scene.Collides(this, out other, out colPosition))
-                //        this.position.Y += 0.01f;
-                //}
+                if (state.IsKeyDown(Keys.S))
+                {
+                    this.position.Y -= 0.005f;
+                    Sprite other;
+                    Vector2 colPosition;
+                    if (scene.Collides(this, out other, out colPosition))
+                        this.position.Y += 0.01f;
+                }
 
+                if (state.IsKeyDown(Keys.D))
+                {
+                    this.position.X += 0.01f;
+                    Sprite other;
+                    Vector2 colPosition;
+                    if (scene.Collides(this, out other, out colPosition))
+                        this.position.Y += 0.01f;
+                }
 
+                if (state.IsKeyDown(Keys.A))
+                {
+                    this.position.X -= 0.01f;
+                    Sprite other;
+                    Vector2 colPosition;
+                    if (scene.Collides(this, out other, out colPosition))
+                        this.position.Y += 0.01f;
+                }
 
+                if (state.IsKeyDown(Keys.Space))
+                {
+                    this.position.Y -= 0.01f;
+                    Sprite other;
+                    Vector2 colPosition;
+                    if (scene.Collides(this, out other, out colPosition))
+                        this.position.Y += 0.01f;
+                }
+
+                this.position.Y += 0.01f;
+
+            if (position.X >= 0.66f)
+            {
+                position.X = 0.66f;
+            }
+
+            if (position.X <=-0.61f)
+            {
+                position.X = -0.61f;
+            }
+
+            
 
            // turret.SetPosition(this.position);
-            Camera.SetTarget(this.position);
+            Camera.SetTarget(new Vector2 (0,position.Y));
 
           //  turret.Update(gameTime);
             base.Update(gameTime);

@@ -26,7 +26,7 @@ namespace GameName3
 
         public static void SetTarget(Vector2 target)
         {
-            Camera.target = target;
+           Camera.target = target;
         }
 
         private static void UpdateRatio()

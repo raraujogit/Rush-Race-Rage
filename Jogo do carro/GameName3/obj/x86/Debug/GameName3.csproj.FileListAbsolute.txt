@@ -53,3 +53,32 @@ C:\Users\Gonçalo\Desktop\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.RawI
 C:\Users\Gonçalo\Desktop\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Gonçalo\Desktop\Jogo do carro\GameName3\bin\Windows\Debug\Content\Carro mustang.png
 C:\Users\Gonçalo\Desktop\Jogo do carro\GameName3\bin\Windows\Debug\Content\sand.png
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\obj\x86\Debug\GameName3.exe
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\obj\x86\Debug\GameName3.pdb
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\obj\x86\Debug\GameName3.csprojResolveAssemblyReference.cache
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\Carro mustang.png
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\pista.jpg
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\sand.png
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\GameName3.exe
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\GameName3.pdb
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\Camioneta para baixo.png

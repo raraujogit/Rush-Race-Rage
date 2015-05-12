@@ -45,7 +45,7 @@ namespace GameName3
             scene.AddBackground(sand);
 
             scene.AddSprite(new Carro(Content));
-           // scene.AddSprite(new Soldier(Content).At(new Vector2(0, 2.5f)));
+            scene.AddSprite(new Primeira_fila_de_carros(Content));
 
         }
 

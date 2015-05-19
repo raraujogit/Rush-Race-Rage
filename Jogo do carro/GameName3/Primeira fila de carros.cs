@@ -10,12 +10,12 @@ namespace GameName3
 {
     class Primeira_fila_de_carros : Sprite
     { 
-        public Primeira_fila_de_carros(ContentManager content)
+        public Primeira_fila_de_carros(ContentManager content, float y)
             : base(content, "Camioneta para baixo")
         {
             this.Scale(.15f);
-            this.position.Y = position.Y + 0.1f;
-            SetPosition(new Vector2(-0.57f, 3));
+            
+            SetPosition(new Vector2(-0.57f, y + 3));
         }
 
         public override void Draw(GameTime gameTime)

@@ -16,11 +16,16 @@ namespace GameName3
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Scene scene;
+        float NextCarInSeconds = 0;
+        float CarCounter = 0;
+        Random randomGenerator;
+        Carro carro;
 
         public Game1() : base()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            randomGenerator = new Random();
         }
 
         protected override void Initialize()
@@ -44,9 +49,8 @@ namespace GameName3
             SlidingBackground sand = new SlidingBackground(Content, "sand");
             scene.AddBackground(sand);
 
-            scene.AddSprite(new Carro(Content));
-            scene.AddSprite(new Primeira_fila_de_carros(Content));
-
+            scene.AddSprite(carro = new Carro(Content));
+            
         }
 
         protected override void UnloadContent()
@@ -59,6 +63,21 @@ namespace GameName3
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            if (CarCounter >= NextCarInSeconds)
+            {
+                // enviar novo carro
+                scene.AddSprite(new Primeira_fila_de_carros(Content, carro.getPosition().Y));
+
+                Console.WriteLine("sending new car");
+
+                CarCounter = 0f;
+                NextCarInSeconds = 2f + (float) randomGenerator.NextDouble() * 8f;
+            }
+            CarCounter += (float) gameTime.ElapsedGameTime.TotalSeconds;
+            
+
+
             scene.Update(gameTime);
             base.Update(gameTime);
 

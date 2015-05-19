@@ -33,6 +33,11 @@ namespace GameName3
             this.size = new Vector2(1f, (float)image.Height / (float)image.Width);
         }
 
+        public Vector2 getPosition()
+        {
+            return position;
+        }
+
         // Se houver colisao, collisionPoint é o ponto de colisão
         // se não houver, collisionPoint deve ser ignorado!
         public bool CollidesWith(Sprite other, out Vector2 collisionPoint)

@@ -20,6 +20,14 @@ namespace GameName3
         float CarCounter = 0;
         Random randomGenerator;
         Carro carro;
+        private string[] carros_para_descer =
+        {
+            "Camioneta para baixo", "carro amarelo"
+        };
+        private string[] carros_para_subir =
+        {
+            "Camioneta para cima", "carro amarelo subir"
+        };
 
         public Game1() : base()
         {
@@ -67,15 +75,20 @@ namespace GameName3
             if (CarCounter >= NextCarInSeconds)
             {
                 // enviar novo carro
-                scene.AddSprite(new Primeira_fila_de_carros(Content, carro.getPosition().Y));
+                int e = randomGenerator.Next(carros_para_descer.Length);
+                scene.AddSprite(new Primeira_fila_de_carros(Content, carro.getPosition().Y, carros_para_descer[e]));
+
+                int a = randomGenerator.Next(carros_para_subir.Length);
+                scene.AddSprite(new Primeira_fila_de_carros_a_subir(Content, carro.getPosition().Y, carros_para_subir[a]));
 
                 Console.WriteLine("sending new car");
 
                 CarCounter = 0f;
-                NextCarInSeconds = 2f + (float) randomGenerator.NextDouble() * 8f;
+                NextCarInSeconds = 2f + (float) randomGenerator.NextDouble() * 2f;
             }
             CarCounter += (float) gameTime.ElapsedGameTime.TotalSeconds;
             
+           
 
 
             scene.Update(gameTime);

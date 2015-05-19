@@ -12,6 +12,7 @@ namespace GameName3
         {
             this.Scale(.15f);
             this.position.Y = position.Y + 0.1f;
+            this.EnableCollisions();
         }
 
         public override void Draw(GameTime gameTime)
@@ -85,6 +86,8 @@ namespace GameName3
             }
 
             Camera.SetTarget(new Vector2 (0,position.Y));
+
+            if EnableCollisions=
 
             base.Update(gameTime);
         }

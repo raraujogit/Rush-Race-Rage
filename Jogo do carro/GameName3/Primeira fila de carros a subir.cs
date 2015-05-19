@@ -8,23 +8,23 @@ using System.Text;
 
 namespace GameName3
 {
-    class Primeira_fila_de_carros : Sprite
-    { 
-        public Primeira_fila_de_carros(ContentManager content, float y, string asset)
+    class Primeira_fila_de_carros_a_subir : Sprite
+    {
+        public Primeira_fila_de_carros_a_subir(ContentManager content, float y, string asset)
             : base(content, asset)
         {
-            Random randomGenerator;
-            randomGenerator = new Random();
+            Random randomGenerator1;
+            randomGenerator1 = new Random();
             this.Scale(.15f);
             // -0.57 , -0.34 , -0.11
-            int pista = randomGenerator.Next(3);
-            SetPosition(new Vector2(-0.57f + pista*0.23f, y + 3));
+            int pista = randomGenerator1.Next(3);
+            SetPosition(new Vector2(0.16f + pista * 0.23f, y + 3));
             this.EnableCollisions();
         }
 
         public override void Draw(GameTime gameTime)
         {
-            base.Draw(gameTime); 
+            base.Draw(gameTime);
         }
 
         public override void SetScene(Scene s)
@@ -35,7 +35,7 @@ namespace GameName3
         public override void Update(GameTime gameTime)
         {
 
-                this.position.Y -= 0.01f;
+            this.position.Y += 0.005f;
 
 
             base.Update(gameTime);

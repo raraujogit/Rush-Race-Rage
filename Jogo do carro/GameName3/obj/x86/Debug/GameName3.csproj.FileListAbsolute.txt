@@ -81,6 +81,38 @@ C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Wi
 C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\Camioneta para baixo.png
+<<<<<<< HEAD
 C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\carro amarelo.png
 C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\Camioneta para cima.png
 C:\Users\Gonçalo\Documents\GitHub\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\carro amarelo subir.png
+=======
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\obj\x86\Debug\GameName3.exe
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\obj\x86\Debug\GameName3.pdb
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\pista.jpg
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\sand.png
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\Camioneta para baixo.png
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Content\Carro mustang.png
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\GameName3.exe
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\GameName3.pdb
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\ASUS\Desktop\Rush-Race-Rage\Rush-Race-Rage\Jogo do carro\GameName3\obj\x86\Debug\GameName3.csprojResolveAssemblyReference.cache
+>>>>>>> origin/master

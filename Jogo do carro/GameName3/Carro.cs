@@ -87,7 +87,7 @@ namespace GameName3
 
             Camera.SetTarget(new Vector2 (0,position.Y));
 
-            if EnableCollisions=
+           // if EnableCollisions=
 
             base.Update(gameTime);
         }

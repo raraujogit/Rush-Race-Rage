@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GameName3
 {
-    class Scene
+    public class Scene
     {
         public SpriteBatch SpriteBatch { get; private set; }
         private List<Sprite> sprites;

@@ -5,8 +5,9 @@ using System;
 
 namespace GameName3
 {
-    class Carro : Sprite
-    { 
+    public class Carro : Sprite
+    {
+        public int estado = 0;
         public Carro(ContentManager content)
             : base(content, "Carro mustang")
         {
@@ -27,12 +28,13 @@ namespace GameName3
 
         public override void Update(GameTime gameTime)
         {
+            Sprite other;
+            Vector2 colPosition;
                 KeyboardState state = Keyboard.GetState();
                 if (state.IsKeyDown(Keys.W))
                 {
                     this.position.Y += 0.01f;
-                    Sprite other;
-                    Vector2 colPosition;
+
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y -= 0.01f;
                 }
@@ -40,8 +42,7 @@ namespace GameName3
                 if (state.IsKeyDown(Keys.S))
                 {
                     this.position.Y -= 0.005f;
-                    Sprite other;
-                    Vector2 colPosition;
+
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y += 0.01f;
                 }
@@ -49,8 +50,7 @@ namespace GameName3
                 if (state.IsKeyDown(Keys.D))
                 {
                     this.position.X += 0.01f;
-                    Sprite other;
-                    Vector2 colPosition;
+
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y += 0.01f;
                 }
@@ -58,8 +58,7 @@ namespace GameName3
                 if (state.IsKeyDown(Keys.A))
                 {
                     this.position.X -= 0.01f;
-                    Sprite other;
-                    Vector2 colPosition;
+
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y += 0.01f;
                 }
@@ -67,13 +66,17 @@ namespace GameName3
                 if (state.IsKeyDown(Keys.Space))
                 {
                     this.position.Y -= 0.01f;
-                    Sprite other;
-                    Vector2 colPosition;
+                    
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y += 0.01f;
                 }
+             
+                if (scene.Collides(this, out other, out colPosition))
+                {
+                    estado = 2;
+                }
 
-                this.position.Y += 0.01f;
+            this.position.Y += 0.01f;
 
             if (position.X >= 0.66f)
             {
@@ -87,7 +90,7 @@ namespace GameName3
 
             Camera.SetTarget(new Vector2 (0,position.Y));
 
-           // if EnableCollisions=
+            
 
             base.Update(gameTime);
         }

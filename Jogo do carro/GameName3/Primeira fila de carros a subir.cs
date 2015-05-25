@@ -21,7 +21,7 @@ namespace GameName3
             SetPosition(new Vector2(0.16f + pista * 0.23f, y + 3));
             this.EnableCollisions();
         }
-
+        
         public override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);

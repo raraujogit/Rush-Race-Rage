@@ -8,7 +8,7 @@ using System.Text;
 
 namespace GameName3
 {
-    class SlidingBackground
+    public class SlidingBackground
     {
         private Texture2D texture;
         private Vector2 position;

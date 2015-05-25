@@ -8,7 +8,7 @@ using System.Text;
 
 namespace GameName3
 {
-    class Sprite
+    public class Sprite
     {
         public bool HasCollisions { protected set; get; }
 
@@ -22,6 +22,7 @@ namespace GameName3
         protected Rectangle? source = null;
         protected Color[] pixels;
         protected ContentManager cManager;
+        protected Game1 game1;
         public Sprite(ContentManager contents, String assetName)
         {
             this.cManager = contents;

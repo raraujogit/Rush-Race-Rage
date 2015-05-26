@@ -51,7 +51,7 @@ namespace GameName3
         {
             if (sprites.Count > 0 || backgrounds.Count > 0)
             {
-                this.SpriteBatch.Begin();
+               // this.SpriteBatch.Begin();
                 // Desenhar os fundos!!!
                 foreach (var background in backgrounds)
                     background.Draw(gameTime);
@@ -60,7 +60,7 @@ namespace GameName3
                 foreach (var sprite in sprites)
                     sprite.Draw(gameTime);
 
-                this.SpriteBatch.End();
+             //   this.SpriteBatch.End();
             }
         }
 

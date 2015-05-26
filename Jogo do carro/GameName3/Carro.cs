@@ -74,6 +74,7 @@ namespace GameName3
                 if (scene.Collides(this, out other, out colPosition))
                 {
                     estado = 2;
+                    
                 }
 
             this.position.Y += 0.01f;

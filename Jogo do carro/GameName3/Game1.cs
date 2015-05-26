@@ -15,17 +15,19 @@ namespace GameName3
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont font;
         Scene scene;
         Sprite sprite;
         float NextCarInSeconds = 0;
         float CarCounter = 0;
+        public float tempo = 0;
         Random randomGenerator;
         Carro carro;
      //   int estado = 0;
         Texture2D menu;
         Texture2D gameover;
         private MouseState oldState;
-        
+        public float score = 0;
 
         private string[] carros_para_descer =
         {
@@ -42,6 +44,7 @@ namespace GameName3
             Content.RootDirectory = "Content";
             randomGenerator = new Random();
         }
+        
 
         protected override void Initialize()
         {
@@ -66,8 +69,11 @@ namespace GameName3
 
             menu = Content.Load<Texture2D>("menu");
             gameover = Content.Load<Texture2D>("gameover");
+            font = Content.Load<SpriteFont>("score");
 
             scene.AddSprite(carro = new Carro(Content));
+
+            score = 0;
             
         }
 
@@ -79,19 +85,26 @@ namespace GameName3
         
         protected override void Update(GameTime gameTime)
         {
+            MouseState mouseState = Mouse.GetState();
+            MouseState newState = Mouse.GetState();
+
             if (carro.estado == 0)
             {
                 if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                     Exit();
                 this.IsMouseVisible = true;
 
-                MouseState mouseState = Mouse.GetState();
-                MouseState newState = Mouse.GetState();
-
                 if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
-                {
-                    
-                    carro.estado = 1;
+                {      
+                    if (mouseState.Position.X > 252 && mouseState.Position.X < 452 && mouseState.Position.Y > 102 && mouseState.Position.Y < 156)
+                    { 
+                        carro.estado = 1; 
+                    }
+                    Console.WriteLine(mouseState.Position);
+                    //{X:252 Y:102} canto da esquerda de cima
+                    //{X:252 Y:156} canto da esquerda de baixo
+                    //{X:452 Y:103} canto da direita de cima
+                    //{X:451 Y:156} canto da direita de baixo
                 }
 
                 oldState = newState;
@@ -120,11 +133,25 @@ namespace GameName3
                     }
 
                     CarCounter += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    tempo += (float)gameTime.ElapsedGameTime.Milliseconds;
+                    score = tempo*0.25f;
 
                     
                     scene.Update(gameTime);
                 }
             }
+
+            if (carro.estado == 2)
+            {
+                if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
+                {
+                    if (mouseState.Position.X > 252 && mouseState.Position.X < 452 && mouseState.Position.Y > 102 && mouseState.Position.Y < 156)
+                    {
+                        carro.estado = 0;
+                    }
+                }
+            }
+
 
 
             base.Update(gameTime);
@@ -134,29 +161,34 @@ namespace GameName3
 
         protected override void Draw(GameTime gameTime)
         {
+            spriteBatch.Begin();
+
             if (carro.estado == 0)
             {
-                spriteBatch.Begin();
 
                 spriteBatch.Draw(menu, new Vector2(0, 0), Color.White);
 
-                spriteBatch.End();
+
             }
 
             if (carro.estado == 1)
             {
                 GraphicsDevice.Clear(Color.CornflowerBlue);
                 scene.Draw(gameTime);
+                spriteBatch.DrawString(font, "Score:" + tempo*0.25, new Vector2(490, 10), Color.Azure, 0, Vector2.Zero, 1.4f, SpriteEffects.None, 0);
             }
 
             if (carro.estado == 2)
             {
-                spriteBatch.Begin();
 
                 spriteBatch.Draw(gameover, new Vector2(0, 0), Color.White);
+                spriteBatch.DrawString(font, "" +score, new Vector2(233, 119), Color.Black, 0, Vector2.Zero, 1.5f, SpriteEffects.None, 0);
 
-                spriteBatch.End();
             }
+
+            
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

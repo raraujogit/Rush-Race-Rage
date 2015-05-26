@@ -26,7 +26,7 @@ namespace GameName3
         {
             base.Draw(gameTime);
         }
-
+        
         public override void SetScene(Scene s)
         {
             this.scene = s;

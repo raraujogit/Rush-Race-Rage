@@ -8,6 +8,7 @@ namespace GameName3
     public class Carro : Sprite
     {
         public int estado = 0;
+        public float velocidade = 0.00000001f;
         public Carro(ContentManager content)
             : base(content, "Carro mustang")
         {
@@ -31,17 +32,21 @@ namespace GameName3
             Sprite other;
             Vector2 colPosition;
                 KeyboardState state = Keyboard.GetState();
+
+
+
                 if (state.IsKeyDown(Keys.W))
                 {
-                    this.position.Y += 0.01f;
-
+                    //this.position.Y += 0.01f;
+                    velocidade += 0.0001f;
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y -= 0.01f;
                 }
 
                 if (state.IsKeyDown(Keys.S))
                 {
-                    this.position.Y -= 0.005f;
+                  //  this.position.Y -= 0.005f;
+                    velocidade -= 0.0005f;
 
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y += 0.01f;
@@ -65,7 +70,8 @@ namespace GameName3
 
                 if (state.IsKeyDown(Keys.Space))
                 {
-                    this.position.Y -= 0.01f;
+                   // this.position.Y -= 0.01f
+                        velocidade -= 0.002f;
                     
                     if (scene.Collides(this, out other, out colPosition))
                         this.position.Y += 0.01f;
@@ -77,7 +83,17 @@ namespace GameName3
                     
                 }
 
-            this.position.Y += 0.01f;
+              if (velocidade>0.02)
+            {
+                velocidade = 0.02f;
+            }
+
+            if (velocidade < 0)
+            {
+                velocidade = 0f;
+            }
+
+            this.position.Y += 0.01f + velocidade;
 
             if (position.X >= 0.66f)
             {

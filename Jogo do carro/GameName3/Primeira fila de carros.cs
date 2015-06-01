@@ -35,7 +35,7 @@ namespace GameName3
         public override void Update(GameTime gameTime)
         {
 
-                this.position.Y -= 0.01f;
+            this.position.Y -= 0.01f;
 
 
             base.Update(gameTime);

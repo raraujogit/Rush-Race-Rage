@@ -46,10 +46,12 @@ namespace GameName3
             Vector2 pixelPoint = new Vector2();
 
             // Calcular pixeis em relacao ao target da camara (centro)
+
             pixelPoint.X = (int)((point.X - target.X) * Camera.ratio + 0.5f);
             pixelPoint.Y = (int)((point.Y - target.Y) * Camera.ratio + 0.5f);
 
             // protetar pixeis calculados para o canto inferior esquerdo do ecra
+
             pixelPoint.X += Camera.lastSeenPixelWidth / 2;
             pixelPoint.Y += Camera.gDevManager.PreferredBackBufferHeight / 2;
 

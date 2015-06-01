@@ -54,7 +54,7 @@ namespace GameName3
 
             return this.PixelTouches(other, out collisionPoint);
         }
-
+        
         public virtual void EnableCollisions()
         {
             this.HasCollisions = true;
